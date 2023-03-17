@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
+<body class="body">
   <div class="container">
     <header class="header">
       <div class="header__top">
@@ -17,7 +17,7 @@
           <img class="logo__image" src="/img/logo.png" alt="Сеть отелей Lagoona" width="261" height="54">
         </a>
         <a class="header__tel" href="tel:+74953225448">+7 495 322-54-48</a>
-        <a class="header__login" href="">Личный кабинет</a>
+        <a class="header__login link" href="">Личный кабинет</a>
       </div>
       <div class="header__bottom">
         <nav class="header__nav nav">
@@ -52,29 +52,35 @@
 
       <section class="offer">
         <h2 class="offer__title section-title">Спецпредложения</h2>
-        <div class="ul offer__list">
-          <li class="offer__item offer-item">
+        <ul class="offer__list">
+          <li class="offer__item offer__item--A  offer-item">
             <img class="offer-item__image" src="/img/Maldives.jpg" alt="Вид с пляжа Мальдивских островов" width="573"
               height="258">
-            <h3 class="offer-item__title">Мальдивские острова</h3>
-            <span class="offer-item__price">от 55 000</span>
-            <a class="offer-item__link" href="">Подробнее</a>
+            <div class="offer-item__description">
+              <h3 class="offer-item__title">Мальдивские острова</h3>
+              <span class="offer-item__price">от 55 000</span>
+              <a class="offer-item__link" href="">Подробнее</a>
+            </div>
           </li>
-          <li class="offer__item offer-item">
+          <li class="offer__item offer__item--B offer-item">
             <img class="offer-item__image" src="/img/Crete.jpg" alt="Вид на бассейн отедя на острове Крит" width="573"
               height="258">
-            <h3 class="offer-item__title">Горящий тур на остров Крит</h3>
-            <span class="offer-item__price">от 30 000</span>
-            <a class="offer-item__link" href="">Подробнее</a>
+            <div class="offer-item__description">
+              <h3 class="offer-item__title">Горящий <br>тур на остров Крит</h3>
+              <span class="offer-item__price">от 30 000</span>
+              <a class="offer-item__link" href="">Подробнее</a>
+            </div>
           </li>
-          <li class="offer__item offer-item offer-item--big">
+          <li class="offer__item offer__item--C offer-item offer-item--big">
             <img class="offer-item__image" src="/img/suite.jpg" alt="Вид с пляжа Мальдивских островов" width="573"
               height="540">
-            <h3 class="offer-item__title">Номера категории люкс</h3>
-            <span class="offer-item__price">от 5 000</span>
-            <a class="offer-item__link" href="">Подробнее</a>
+            <div class="offer-item__description">
+              <h3 class="offer-item__title offer-item__title--big">Номера категории люкс</h3>
+              <span class="offer-item__price offer-item__price--big">от 5 000</span>
+              <a class="offer-item__link offer-item__link--big" href="">Подробнее</a>
+            </div>
           </li>
-        </div>
+        </ul>
       </section>
 
       <section class="about">
@@ -84,7 +90,7 @@
           внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения
           высшего порядка, а также дальнейшее развитие различных форм деятельности представляет собой интересный
           эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся
-          структура организации требуют определения и уточнения существенных финансовых и административных условий.
+          структура организации требуют определения и уточнения существенных финансовых и&nbsp;административных условий.
         </p>
       </section>
 
@@ -94,28 +100,28 @@
           <li class="service__item">
             <img class="service__image" src="/img/service.jpg" alt="Бокалы шампанского на фоне океана" width="573"
               height="165">
-            <a class="service__link" href="">Эксклюзивное обслуживание</a>
+            <a class="service__link link link--no-border" href="">Эксклюзивное обслуживание</a>
             <p class="service__description">
               Равным образом постоянный количественный рост и сфера нашей активности
             </p>
           </li>
           <li class="service__item">
             <img class="service__image" src="/img/rent.jpg" alt="Вид банкетного зала" width="573" height="165">
-            <a class="service__link" href="">Аренда банкетных залов</a>
+            <a class="service__link link link--no-border" href="">Аренда банкетных залов</a>
             <p class="service__description">
               Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
             </p>
           </li>
           <li class="service__item">
             <img class="service__image" src="/img/pool.jpg" alt="Бассейн в отеле" width="573" height="165">
-            <a class="service__link" href="">Сауны, бассейны, бани, фитнес-залы</a>
+            <a class="service__link link link--no-border" href="">Сауны, бассейны, бани, фитнес-залы</a>
             <p class="service__description">
               Не следует, однако забывать, что начало повседневной работы по формированию позиции
             </p>
           </li>
           <li class="service__item">
             <img class="service__image" src="/img/parking.jpg" alt="Стоянка актомобилей" width="573" height="165">
-            <a class="service__link" href="">Охраняемые автомобильные стоянки</a>
+            <a class="service__link link link--no-border" href="">Охраняемые автомобильные стоянки</a>
             <p class="service__description">
               Не следует, однако забывать, что начало повседневной работы по формированию позиции
             </p>
@@ -126,44 +132,44 @@
       <section class="advantages">
         <h2 class="advantages__title section__title">Преимущества</h2>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--bathtub">
             <p class="advantages__description">
-              Идейные соображения высшего порядка, а также постоянный количественный рост
+              Идейные соображения высшего порядка, а&nbsp;также постоянный количественный рост
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--hanger">
             <p class="advantages__description">
               Значимость этих проблем настолько очевидна, что вопрос остаётся открытым
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--heating">
             <p class="advantages__description">
               Таким образом реализация плановых заданий играет важную роль для понимания
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--hotel-key">
             <p class="advantages__description">
-              Повседневная практика показывает, что сложившаяся структура организации
+              Повседневная практика показывает, что&nbsp;сложившаяся структура организации
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--parking">
             <p class="advantages__description">
               Равным образом рамки и место обучения кадров способствует подготовки сотрудника
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--reception">
             <p class="advantages__description">
               Консультация с активом влечёт за собой процесс внедрения услуг нашего сервиса
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--security-box">
             <p class="advantages__description">
-              Повседневная практика показывает, что дальнейшее развитие различных
+              Повседневная практика показывает, что&nbsp;дальнейшее развитие различных
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--swimming-pool">
             <p class="advantages__description">
-              Значимость этого настолько очевидна, что консультация наших экспертов помогает
+              Значимость этого настолько очевидна, что&nbsp;консультация наших экспертов помогает
             </p>
           </li>
         </ul>
@@ -175,7 +181,7 @@
           <li class="hotels__item">
             <img class="hotels__image" src="/img/hotel-1.jpg" alt="Вид отеля Lagoona espanola" width="374" height="217">
             <div class="hotels__wrapper">
-              <span class="hotels__price">от 4 698 /ночь</span>
+              <div class="hotels__price"><span class="hotels__from">от</span> <strong class="hotels__number">4 698</strong> /ночь</div>
               <div class="hotels__rating">
                 <img class="hotels__star" src="/img/star.svg" alt="Рейтинг отля 4 из 5">
                 <img class="hotels__star" src="/img/star.svg" alt="">
@@ -191,7 +197,7 @@
           <li class="hotels__item">
             <img class="hotels__image" src="/img/hotel-2.jpg" alt="Вид отеля Lagoona son tipicas" width="374" height="217">
             <div class="hotels__wrapper">
-              <span class="hotels__price">от 5 148 /ночь</span>
+              <div class="hotels__price"><span class="hotels__from">от</span> <strong class="hotels__number">5 148</strong> /ночь</div>
               <div class="hotels__rating">
                 <img class="hotels__star" src="/img/star.svg" alt="Рейтинг отля 4 из 5">
                 <img class="hotels__star" src="/img/star.svg" alt="">
@@ -207,7 +213,7 @@
           <li class="hotels__item">
             <img class="hotels__image" src="/img/hotel-3.jpg" alt="Вид отеля Lagoona de la guerra" width="374" height="217">
             <div class="hotels__wrapper">
-              <span class="hotels__price">от 6 254 /ночь</span>
+              <div class="hotels__price"><span class="hotels__from">от</span> <strong class="hotels__number">6 254</strong> /ночь</div>
               <div class="hotels__rating">
                 <img class="hotels__star" src="/img/star.svg" alt="Рейтинг отля 5 из 5">
                 <img class="hotels__star" src="/img/star.svg" alt="">
@@ -223,7 +229,7 @@
           <li class="hotels__item">
             <img class="hotels__image" src="/img/hotel-4.jpg" alt="Вид отеля Lagoona mentira piadosa" width="374" height="217">
             <div class="hotels__wrapper">
-              <span class="hotels__price">от 6 320 /ночь</span>
+              <div class="hotels__price"><span class="hotels__from">от</span> <strong class="hotels__number">6 320</strong> /ночь</div>
               <div class="hotels__rating">
                 <img class="hotels__star" src="/img/star.svg" alt="Рейтинг отля 5 из 5">
                 <img class="hotels__star" src="/img/star.svg" alt="">
@@ -239,7 +245,7 @@
           <li class="hotels__item">
             <img class="hotels__image" src="/img/hotel-5.jpg" alt="Вид отеля Lagoona empujar la creatividad" width="374" height="217">
             <div class="hotels__wrapper">
-              <span class="hotels__price">от 6 457 /ночь</span>
+              <div class="hotels__price"><span class="hotels__from">от</span> <strong class="hotels__number">6 457</strong> /ночь</div>
               <div class="hotels__rating">
                 <img class="hotels__star" src="/img/star.svg" alt="Рейтинг отля 5 из 5">
                 <img class="hotels__star" src="/img/star.svg" alt="">
@@ -255,7 +261,7 @@
           <li class="hotels__item">
             <img class="hotels__image" src="/img/hotel-6.jpg" alt="Вид отеля Lagoona el retorno" width="374" height="217">
             <div class="hotels__wrapper">
-              <span class="hotels__price">от 6 320 /ночь</span>
+              <div class="hotels__price"><span class="hotels__from">от</span> <strong class="hotels__number">6 320</strong> /ночь</div>
               <div class="hotels__rating">
                 <img class="hotels__star" src="/img/star.svg" alt="Рейтинг отля 4 из 5">
                 <img class="hotels__star" src="/img/star.svg" alt="">
@@ -271,7 +277,7 @@
           <li class="hotels__item">
             <img class="hotels__image" src="/img/hotel-7.jpg" alt="Вид отеля Lagoona mentira piadosa" width="374" height="217">
             <div class="hotels__wrapper">
-              <span class="hotels__price">от 6 505 /ночь</span>
+              <div class="hotels__price"><span class="hotels__from">от</span> <strong class="hotels__number">6 505</strong> /ночь</div>
               <div class="hotels__rating">
                 <img class="hotels__star" src="/img/star.svg" alt="Рейтинг отля 5 из 5">
                 <img class="hotels__star" src="/img/star.svg" alt="">
@@ -287,7 +293,7 @@
           <li class="hotels__item">
             <img class="hotels__image" src="/img/hotel-8.jpg" alt="Вид отеля Lagoona suerte siguió siempre" width="374" height="217">
             <div class="hotels__wrapper">
-              <span class="hotels__price">от 6 824 /ночь</span>
+              <div class="hotels__price"><span class="hotels__from">от</span> <strong class="hotels__number">6 824</strong> /ночь</div>
               <div class="hotels__rating">
                 <img class="hotels__star" src="/img/star.svg" alt="Рейтинг отля 4 из 5">
                 <img class="hotels__star" src="/img/star.svg" alt="">
@@ -306,9 +312,132 @@
           </li>
         </ul>
       </section>
-    </main>
-  </div>
 
+      <section class="search">
+        <h2 class="search__title section__title">Хочу тур</h2>
+        <form class="search__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <div class="search__city">
+            <label class="search__label" for="city">Город вылета</label>
+            <select class="search__input  search__input--select" name="city" id="city">
+              <option class="search__option">Санкт-Петербург</option>
+              <option class="search__option">Москва</option>
+              <option class="search__option">Казань</option>
+              <option class="search__option">Воркута</option>
+            </select>
+          </div>
+          <div class="search__country">
+            <label class="search__label" for="country">Страна</label>
+            <select class="search__input search__input--select" name="country" id="country">
+              <option class="search__option">Австралия</option>
+              <option class="search__option">Таиланд</option>
+              <option class="search__option">Италия</option>
+              <option class="search__option">Тунис</option>
+            </select>
+          </div>
+          <div class="search__date">
+            <label class="search__label" for="date">Дата прибытия</label>
+            <input class="search__input search__input--date" type="date" name="date" id="date" value="2021-10-18">
+          </div>
+          <div class="search__nights">
+            <label class="search__label" for="nights">Ночей</label>
+            <input class="search__input search__input--number" type="number" name="nights" id="nights" value="6" min="1" max="100" step="1">
+          </div>
+          <div class="search__tourists">
+            <label class="search__label" for="tourists">Туристы</label>
+            <input class="search__input search__input--number" type="number" name="tourists" id="tourists" value="2" min="1" max="100" step="1" required>
+          </div>
+          <button class="search__button button" type="submit">Найти</button>
+        </form>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__title section__title">Контакты</h2>
+        <div class="contacts__wrapper">
+          <div class="contacts__contact-list">
+            <table class="contacts__table">
+              <tr class="contacts__row">
+                <td class="contacts__name">Адрес</td>
+                <td class="contacts__value">
+                  <address class="contacts__address">Москва, улица Юности, дом&nbsp;5&nbsp;строение 4, офис 2</address>
+                </td>
+              </tr>
+              <tr class="contacts__row">
+                <td class="contacts__name">Телефоны</td>
+                <td class="contacts__value">
+                  <a class="contacts__link link" href="tel:+74995356434">+7 499 535-64-34</a>
+                  <br>
+                  <a class="contacts__link link" href="tel:+74950050544">+7 495 005-05-44</a>
+                </td>
+              </tr>
+              <tr class="contacts__row">
+                <td class="contacts__name">Email</td>
+                <td class="contacts__value">
+                  <a class="contacts__link link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+                  <br>
+                  <span class="contacts__description">по вопросам бронирования</span>
+                  <br>
+                  <a class="contacts__link link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+                  <br>
+                  <span class="contacts__description">по вопросам сотрудничества</span>
+                </td>
+              </tr>
+              <tr class="contacts__row">
+                <td class="contacts__name">График</td>
+                <td class="contacts__value">Понедельник-пятница,<br>с 10:00 до 19:00</td>
+              </tr>
+            </table>
+            <button class="contacts__button button" type="button">Построить маршрут</button>
+          </div>
+          <picture class="contacts__picture">
+            <source srcset="/img/contacts.jpg 1x, /img/contacts@2x.jpg 2x" type="image/jpeg" />
+            <img class="contacts__image" src="/img/contacts.jpg" alt="Фотография ресепшена отеля Lagoona" width="653" height="528">
+          </picture>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__copyright-block">
+        <p class="footer__copyright">
+          &#169; 2012–2020 Управляющая компания Объединённой сети «Лагуна Хотелс»
+        </p>
+        <p class="footer__text">
+          Представленная на сайте информация носит справочный характер и&nbsp;не&nbsp;является публичной офертой
+        </p>
+        <a href="" class="footer__link link">Пользовательское соглашение</a>
+      </div>
+      <div class="footer__address-block">
+        <address class="footer__address">
+          11710, улица Юности, дом 5 строение 4, офис 2
+        </address>
+        <div class="footer__tel">
+          <a class="footer__link link" href="tel:+74995356434">+7 499 535-64-34</a>
+          <a class="footer__link link" href="tel:+74950050544">+7 495 005-05-44</a>
+        </div>
+        <div class="footer__email">
+          <a class="footer__link link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+          <a class="footer__link link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+        </div>
+      </div>
+      <ul class="footer__social">
+        <li class="footer__item">
+          <a href="" class="footer__social-link footer__social-link--tripadvisor">
+            <span class="visually-hidden">Tripadvisor</span>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="" class="footer__social-link footer__social-link--ok">
+            <span class="visually-hidden">Одноклассники</span>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="" class="footer__social-link footer__social-link--vk">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
 </body>
 
 </html>
