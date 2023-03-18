@@ -31,6 +31,14 @@
   font-style: normal;
 }
 
+/* custom properties */
+:root {
+  --color-link: #cc9933;
+  --color-link-hover: #f0bf5f;
+  --color-link-active: #a47312;
+  --color-bg: #fff;
+}
+
 /* visually-hidden */
 .visually-hidden {
   position: absolute;
@@ -49,27 +57,24 @@
 .link {
   font-family: 'Muller', Arial, Helvetica, sans-serif;
   font-weight: normal;
-  color: #cc9933;
+  color: var(--color-link);
   text-decoration: none;
   cursor: pointer;
+  transition: color 0.2s ease;
 }
 
 .link:hover {
-  color: #f0bf5f;
+  color: var(--color-link-hover);
 }
 
 .link:focus {
-  color: #cc9933;
-  outline: 1px solid #cc9933;
+  color: var(--color-link);
+  outline: 1px solid var(--color-link);
   outline-offset: 5px;
 }
 
 .link:active {
-  color: #a47312;
-  outline: none;
-}
-
-.link--no-border:focus {
+  color: var(--color-link-active);
   outline: none;
 }
 
@@ -115,17 +120,17 @@
 }
 
 .header__tel:hover {
-  color: #cc9933;
+  color: var(--color-link);
 }
 
 .header__tel:focus {
-  color: #cc9933;
-  border: 1px solid #cc9933;
+  color: var(--color-link);
+  border: 1px solid var(--color-link);
   outline: none;
 }
 
 .header__tel:active {
-  color: #a47312;
+  color: var(--color-link-active);
 }
 
 .header__login {
@@ -146,6 +151,7 @@
   height: 24px;
   background-image: url('/img/keyboard_tab.svg');
   background-repeat: no-repeat;
+  transition: background-image 0.2s ease;
 }
 
 .header__login:hover::before {
@@ -164,7 +170,7 @@
   display: flex;
   align-items: center;
   padding: 14px 45px;
-  background-color: #fff;
+  background-color: var(--color-bg);
   border-radius: 15px;
 }
 
@@ -189,24 +195,27 @@
   font-family: 'Muller', Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1;
-  color: #cc9933;
+  color: var(--color-link);
   text-decoration: none;
-  border: 1px solid #cc9933;
+  border: 1px solid var(--color-link);
   border-radius: 10px;
   background-color: transparent;
   outline: none;
+  transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
 }
 
 .button:hover,
 .button:focus {
-  color: #fff;
-  background-color: #cc9933;
+  color: var(--color-bg);
+  background-color: var(--color-link);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
 }
 
 .button:active {
-  color: #fff;
-  background-color: #a47312;
-  border-color: #a47312;
+  color: var(--color-bg);
+  background-color: var(--color-link-active);
+  border-color: var(--color-link-active);
 }
 
 /* nav */
@@ -230,20 +239,21 @@
   line-height: 1;
   color: #666;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .nav__link:hover {
-  color: #cc9933;
+  color: var(--color-link);
 }
 
 .nav__link:focus {
-  color: #cc9933;
-  border: 1px solid #cc9933;
+  color: var(--color-link);
+  border: 1px solid var(--color-link);
   outline: none;
 }
 
 .nav__link:active {
-  color: #a47312;
+  color: var(--color-link-active);
 }
 
 /* offer */
@@ -312,7 +322,7 @@
   font-size: 40px;
   line-height: 1;
   font-weight: bold;
-  color: #fff;
+  color: var(--color-bg);
 }
 
 .offer-item__price {
@@ -322,7 +332,7 @@
   font-size: 20px;
   line-height: 1;
   font-weight: normal;
-  color: #fff
+  color: var(--color-bg)
 }
 
 .offer-item__link {
@@ -332,9 +342,11 @@
   font-family: 'Muller', Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1;
-  color: #f0bf5f;
+  color: var(--color-link-hover);
   text-decoration: none;
   cursor: pointer;
+  transition: padding 0.2s ease;
+
 }
 
 .offer-item__link::after {
@@ -358,7 +370,7 @@
 
 .offer-item__link:active {
   padding-right: 19px;
-  color: #fff;
+  color: var(--color-bg);
 }
 
 .offer-item__description {
@@ -430,7 +442,7 @@
 }
 
 .service__item {
-  background-color: #fff;
+  background-color: var(--color-bg);
   overflow: hidden;
   border-radius: 15px;
 }
@@ -449,6 +461,7 @@
   font-size: 20px;
   line-height: 40px;
   font-weight: 500;
+  transition: padding 0.2s ease;
 }
 
 .service__link::after {
@@ -460,6 +473,8 @@
   height: 19px;
   background-image: url('/img/rectangle-cc9933.svg');
   background-repeat: no-repeat;
+  transition: background-image 0.2s ease;
+
 }
 
 .service__link:hover {
@@ -519,7 +534,7 @@
   position: relative;
   margin: 0;
   padding: 116px 42px 32px 45px;
-  background-color: #fff;
+  background-color: var(--color-bg);
   border-radius: 15px;
 }
 
@@ -611,7 +626,7 @@
 }
 
 .hotels__item {
-  background-color: #fff;
+  background-color: var(--color-bg);
   border-radius: 15px;
   overflow: hidden;
 }
@@ -668,44 +683,47 @@
 
 .hotels__item--all {
   position: relative;
+  padding-bottom: 27px;
+  text-align: center;
 }
 
 .hotels__image--big {
-  margin-bottom: 0;
+  margin-bottom: -67px;
 }
 
 .hotels__link-to-all {
-  position: absolute;
-  bottom: 27px;
-  left: 54px;
   display: inline-block;
   padding-right: 19px;
   font-family: 'Muller', Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 40px;
-  color: #fff;
+  color: var(--color-bg);
   text-decoration: none;
-}
-
-.hotels__link-to-all::after {
-  position: absolute;
-  content: '';
-  right: 0;
-  top: 11px;
-  width: 10px;
-  height: 19px;
   background-image: url('/img/rectangle-white.svg');
   background-repeat: no-repeat;
+  background-position: 100% 50%;
+  transition: padding 0.2s ease;
 }
 
 .hotels__link-to-all:hover {
   padding-right: 30px;
+  padding-left: 11px;
 }
 
 .hotels__link-to-all:focus,
 .hotels__link-to-all:active {
   padding-right: 19px;
 }
+
+.hotels__link-to-all::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 
 /* search */
 .search {
@@ -732,7 +750,7 @@
   align-items: center;
   padding: 32px 28px;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: var(--color-bg);
 }
 
 .search__city,
@@ -810,7 +828,7 @@
 .contacts__wrapper {
   display: flex;
   padding: 45px;
-  background-color: #fff;
+  background-color: var(--color-bg);
   border-radius: 15px;
 }
 
@@ -888,7 +906,7 @@
   font-size: 16px;
   line-height: 1.9;
   font-weight: normal;
-  color: #fff;
+  color: var(--color-bg);
   background-color: #333;
   background-image: url(/img/footer-logo.png);
   background-repeat: no-repeat;
